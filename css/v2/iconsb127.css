@@ -1,0 +1,439 @@
+.icon {
+    height: 18px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+            mask-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: black;
+}
+
+.icon-v2{
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+            mask-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: black;
+}
+
+.icon-big {
+    height: 30px !important;
+    width: 30px !important;
+}
+.icon-bigger {
+    height: 40px !important;
+    width: 40px !important;
+}
+
+.icon-small {
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.icon-atm {
+    -webkit-mask-image: url('../../icon/v2/atm.svg');
+    mask-image: url('../../icon/v2/atm.svg');
+}
+.icon-atm-bersama {
+    background-image: url('../../icon/v2/atm-bersama.jpg');
+    background-color: transparent;
+}
+.icon-back {
+    -webkit-mask-image: url('../../icon/v2/back.svg');
+    mask-image: url('../../icon/v2/back.svg');
+}
+.icon-bca {
+    background-image: url('../../icon/v2/bca.jpg');
+    background-color: transparent;
+}
+.icon-bca-klik {
+    background-image: url('../../icon/v2/bca_klik.jpg');
+    background-color: transparent;
+}
+.icon-bni {
+    background-image: url('../../icon/v2/bni.jpg');
+    background-color: transparent;
+}
+.icon-carret-down {
+    -webkit-mask-image: url('../../icon/v2/carret-down.svg');
+    mask-image: url('../../icon/v2/carret-down.svg');
+    height: 12px !important;
+    width: 12px !important;
+}
+.icon-facebook-colorfull {
+    background-image: url('../../icon/facebook-icon.png');
+    background-color: transparent;
+}
+.icon-google-colorfull {
+    background-image: url('../../icon/google-icon.png');
+    background-color: transparent;
+}
+
+.icon-cimb {
+    background-image: url('../../icon/v2/cimb-niaga.jpg');
+    background-color: transparent;
+}
+.icon-cimb-clicks {
+    background-image: url('../../icon/v2/cimbclicks.jpg');
+    background-color: transparent;
+}
+.icon-close {
+    -webkit-mask-image: url('../../icon/v2/close.svg');
+    mask-image: url('../../icon/v2/close.svg');
+}
+.icon-danamon {
+    background-image: url('../../icon/v2/danamon.jpg');
+    background-color: transparent;
+}
+.icon-eye {
+    -webkit-mask-image: url('../../icon/v2/eye.svg');
+    mask-image: url('../../icon/v2/eye.svg');
+}
+.icon-visa-mastercard {
+    background-image: url('../../icon/v2/visa_mastercard.jpg');
+    background-color: transparent;
+}
+
+.icon-dashboard {
+    -webkit-mask-image: url('../../icon/v2/dashboard.svg');
+    mask-image: url('../../icon/v2/dashboard.svg');
+}
+
+.icon-facebook {
+    -webkit-mask-image: url('../../icon/v2/facebook.svg');
+    mask-image: url('../../icon/v2/facebook.svg');
+    height: 30px !important;
+    width: 30px !important;
+    /* background-color: #d5d5d5; */
+    background-color: #fff;
+}
+
+.icon-instagram {
+    -webkit-mask-image: url('../../icon/v2/instagram.svg');
+    mask-image: url('../../icon/v2/instagram.svg');
+    height: 30px !important;
+    width: 30px !important;
+    /* background-color: #d5d5d5; */
+    background-color: #fff;
+}
+.icon-instagram-v2 {
+    -webkit-mask-image: url('../../icon/v2/instagram.svg');
+    mask-image: url('../../icon/v2/instagram.svg');
+    height: 20px !important;
+    width: 20px !important;
+    /* background-color: #d5d5d5; */
+    background-color: #fff;
+}
+
+.icon-play {
+    -webkit-mask-image: url('../../icon/play_button.png');
+    mask-image: url('../../icon/play_button.png');
+    height: 25px !important;
+    width: 25px !important;
+    /* background-color: #d5d5d5; */
+    background-color: #000;
+}
+.icon-list {
+    -webkit-mask-image: url('../../icon/v2/list.svg');
+    mask-image: url('../../icon/v2/list.svg');    
+}
+.icon-lock {
+    -webkit-mask-image: url('../../icon/v2/lock.svg');
+    mask-image: url('../../icon/v2/lock.svg');
+
+}
+
+.icon-login {
+    -webkit-mask-image: url('../../icon/v2/login.svg');
+    mask-image: url('../../icon/v2/login.svg');
+}
+
+.icon-logout {
+    -webkit-mask-image: url('../../icon/v2/logout.svg');
+    mask-image: url('../../icon/v2/logout.svg');
+}
+.icon-mandiri-click {
+    background-image: url('../../icon/v2/mandiri-clickpay.jpg');
+    background-color: transparent;
+}
+.icon-maybank {
+    background-image: url('../../icon/v2/maybank.jpg');
+    background-color: transparent;
+}
+.icon-next {
+    -webkit-mask-image: url('../../icon/v2/next.svg');
+    mask-image: url('../../icon/v2/next.svg');
+}
+.icon-notification {
+    -webkit-mask-image: url('../../icon/v2/notification.svg');
+    mask-image: url('../../icon/v2/notification.svg');
+}
+.icon-permata {
+    background-image: url('../../icon/v2/permata.jpg');
+    background-color: transparent;
+}
+.icon-retail {
+    background-image: url('../../icon/v2/retail.jpg');
+    background-color: transparent;
+}
+.icon-user {
+    -webkit-mask-image: url('../../icon/v2/user.svg');
+    mask-image: url('../../icon/v2/user.svg');
+}
+.icon-hot-sale {
+    background-image: url('../../icon/v2/discount.svg');
+    background-color: transparent;
+}
+.icon-sale {
+    background-image: url('../../icon/v2/sale.svg');
+    background-color: transparent;
+}
+.icon-notepad {
+    background-image: url('../../icon/v2/notepad.svg');
+    background-color: transparent;
+}
+.icon-notepad-1 {
+    background-image: url('../../icon/v2/notepad-1.svg');
+    background-color: transparent;
+}
+.icon-math {
+    background-image: url('../../icon/v2/math.svg');
+    background-color: transparent;
+}
+.icon-bookmark {
+    background-image: url('../../icon/v2/bookmark.svg');
+    background-color: transparent;
+}
+.icon-bookmark-1 {
+    background-image: url('../../icon/v2/bookmark-1.svg');
+    background-color: transparent;
+}
+.icon-calendar {
+    background-image: url('../../icon/v2/calendar.svg');
+    background-color: transparent;
+}
+.icon-email {
+    background-image: url('../../icon/v2/email.svg');
+    background-color: transparent;
+}
+.icon-identification {
+    background-image: url('../../icon/v2/identification.svg');
+    background-color: transparent;
+}
+.icon-name {
+    background-image: url('../../icon/v2/name.svg');
+    background-color: transparent;
+}
+.icon-name-1 {
+    background-image: url('../../icon/v2/name-1.svg');
+    background-color: transparent;
+}
+.icon-smartphone {
+    background-image: url('../../icon/v2/smartphone.svg');
+    background-color: transparent;
+}
+.icon-person {
+    background-image: url('../../icon/v2/person.svg');
+    background-color: transparent;
+}
+.icon-clock {
+    background-image: url('../../icon/v2/clock.svg');
+    background-color: transparent;
+}
+.icon-price {
+    background-image: url('../../icon/v2/price.svg');
+    background-color: transparent;
+}
+.icon-desc {
+    background-image: url('../../icon/v2/description.svg');
+    background-color: transparent;
+}
+.icon-decoration {
+    background-image: url('../../icon/v2/decoration-1.svg');
+    background-color: transparent;
+}
+.icon-event {
+    background-image: url('../../icon/v2/event.svg');
+    background-color: transparent;
+}
+.icon-pin {
+    background-image: url('../../icon/v2/pin.svg');
+    background-color: transparent;
+}
+.icon-wheel {
+    background-image: url('../../icon/v2/wheel.svg');
+    background-color: transparent;
+}
+.icon-rupiah {
+    background-image: url('../../icon/v2/indonesian-rupiah.svg');
+    background-color: transparent;
+}
+.icon-love {
+    background-image: url('../../icon/v2/love.svg');
+    background-color: transparent;
+}
+.icon-dashboard-1 {
+    background-image: url('../../icon/v2/home-1.svg');
+    background-color: transparent;
+}
+.icon-user-management {
+    background-image: url('../../icon/v2/team-1.svg');
+    background-color: transparent;
+}
+.icon-analytics {
+    background-image: url('../../icon/v2/analytics.svg');
+    background-color: transparent;
+}
+.icon-vendor {
+    background-image: url('../../icon/v2/vendor.svg');
+    background-color: transparent;
+}
+.icon-coupon {
+    background-image: url('../../icon/v2/coupon.svg');
+    background-color: transparent;
+}
+.icon-book {
+    background-image: url('../../icon/v2/book.svg');
+    background-color: transparent;
+}
+.icon-notebook {
+    background-image: url('../../icon/v2/notebook.svg');
+    background-color: transparent;
+}
+.icon-user-1 {
+    background-image: url('../../icon/v2/user-1.svg');
+    background-color: transparent;
+}
+.icon-handshake {
+    background-image: url('../../icon/v2/handshake.svg');
+    background-color: transparent;
+}
+.icon-user-1 {
+    background-image: url('../../icon/v2/user-1.svg');
+    background-color: transparent;
+}
+.icon-voucher {
+    background-image: url('../../icon/v2/voucher.svg');
+    background-color: transparent;
+}
+.icon-group {
+    background-image: url('../../icon/v2/team.svg');
+    background-color: transparent;
+}
+.icon-vendor {
+    background-image: url('../../icon/v2/vendor.svg');
+    background-color: transparent;
+}
+.icon-list-1 {
+    background-image: url('../../icon/v2/list-1.svg');
+    background-color: transparent;
+}
+.icon-man {
+    background-image: url('../../icon/v2/man.svg');
+    background-color: transparent;
+}
+.icon-book {
+    background-image: url('../../icon/v2/book.svg');
+    background-color: transparent;
+}
+.icon-team-1 {
+    background-image: url('../../icon/v2/team-1.svg');
+    background-color: transparent;
+}
+.icon-trash {
+    background-image: url('../../icon/v2/trash.svg');
+    background-color: transparent;
+}
+.icon-trash-1 {
+    background-image: url('../../icon/v2/trash-1.svg');
+    background-color: transparent;
+}
+.icon-whatsapp {
+    background-image: url('../../icon/v2/whatsapp.svg');
+    background-color: transparent;
+    height: 40px !important;
+    width: 40px !important;
+}
+.icon-ig {
+    background-image: url('../../icon/ig.png');
+    background-color: transparent;
+    margin-top: 5px;
+    margin-left:-5px;
+    height: 42px !important;
+    width: 42px !important;
+}
+.icon-yt {
+    background-image: url('../../icon/yt.png');
+    background-color: transparent;
+    height: 32px !important;
+    width: 32px !important;
+}
+.icon-fb {
+    background-image: url('../../icon/fb.png');
+    background-color: transparent;
+    height: 30px !important;
+    width: 30px !important;
+}
+.icon-whatsapp-v2 {
+    background-image: url('../../icon/v2/whatsapp.svg');
+    background-color: transparent;
+    height: 20px !important;
+    width: 20px !important;
+}
+.icon-youtube {
+    background-image: url('../../icon/youtube.png');
+    background-color: transparent;
+    height: 20px !important;
+    width: 20px !important;
+}
+.icon-calendar-v2 {
+    background-image: url('../../icon/calendar.png');
+    background-color: transparent;
+    height: 20px !important;
+    width: 20px !important;
+}
+.icon-line {
+    background-image: url('../../icon/v2/line.svg');
+    background-color: transparent;
+}
+.icon-facebook-1 {
+    background-image: url('../../icon/v2/facebook-1.svg');
+    background-color: transparent;
+}
+
+.icon-report {
+    background-image: url('../../icon/v2/report.svg');
+    background-color: transparent;
+}
+.icon-list-color {
+    background-image: url('../../icon/v2/list-color.svg');
+    background-color: transparent;
+}
+.icon-pdf {
+    background-image: url('../../icon/v2/pdf.svg');
+    background-color: transparent;
+}
+.icon-bill-out {
+    background-image: url('../../icon/v2/receipt.svg');
+    background-color: transparent;
+}
+.icon-points {
+    background-image: url('../../icon/v2/coins.svg');
+    background-color: transparent;
+}

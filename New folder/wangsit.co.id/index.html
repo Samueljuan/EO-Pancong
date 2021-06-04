@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="xFPZWELyfhDyEFfGUXSuggm8hmEUfQWJbeHVvjRH">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo_wangsit.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://wangsit.co.id/css/apps.css">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/v2/template.css?version=3.4.2">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/v2/icons.css?version=2.0.1">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/plugin/loader.css?version=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://demo.portofolio.web.id/wangsit/wangsit.css">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/lightslider.min.css?version=1.3">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/vendor_directory.css?version=1.2">
+    <!--stylesheets / link tags loaded here-->
+    <link rel="stylesheet" href="http://wangsit.co.id/css/style.css">
+    <style>
+        .center { margin: 0 auto;
+            text-align:center;
+            font-size: 12px;
+        }
+        .font-category{
+            font-size: 14px;
+        }
+        .checked {
+        color: orange;
+        }
+        .unchecked{
+        color: #6c6c6c;
+        }
+        .left {
+            margin-left: -30px;
+        }
+        .previous {
+            background-color: #eacdce;
+            color: black;
+        }
+        .next {
+            background-color: #eacdce;
+            color: black;
+        }
+        .btn{
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+        .btn:hover{
+            background-color: #ddd;
+            color: black;
+        }
+        .sliders{
+            width:160px;
+            height: 160px;
+        }
+        .marginbtm{
+            bottom: -20px;
+            border-radius: 20px;
+        }
+    </style>
+
+<title>Wangsit | Vendor Directory</title>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googvaragmanager.com/ns.html?id=GTM-TD8LLWQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="fixed-top" id="autocomplete_app">
+        <div class="bg-pink">
+        <div>
+            <div class="navbar navbar-expand-md navbar-light py-2 p-0 bg-pink top-menu champagne-bold">
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target=".multicollapse"
+                    aria-controls="collapse1 collapse2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="http://wangsit.co.id" class="navbar-brand">
+                    <img src="http://wangsit.co.id/logo_wangsit.png" alt="" height="40">
+                </a>
+
+                <div class="col-md-7">
+                <auto-complete></auto-complete>
+               <!-- <input type="text" class="form-control form-control-sm" v-model="query" onchange="autoComplete" placeholder="Search" class="search" >
+                 <div class="panel-footer" v-if="results.length != 0">
+                <ul class="list-group">
+                <li class="list-group-item" v-for="result in results">
+                   {{result.name}}
+                </li>
+                </ul>
+                </div> -->
+                </div>
+                <!-- pembatas -->
+                <!-- <div class="navbar-collapse justify-content-end">
+                    <div class="navbar-nav">
+                    <div class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="profile-dropdown">
+                                    <img src="http://wangsit.co.id/icon/ic_account.png" alt="avatar" class="absolute-center h-100">
+                                </div>
+                                <i class="icon icon-carret-down"></i>
+                            </a>
+                             <div class="collapse dropdown-menu dropdown-menu-right profile-menu helvetica"
+                                aria-labelledby="profileDropdown" id="profile-collapse">
+                                <span class="dropdown-item text-uppercase text-center"> test1</span>
+                                <span class="dropdown-item text-center"><small class="text-muted">test2</small></span>
+                                <hr>
+                                <a class="dropdown-item" href="http://wangsit.co.id/user/dashboard"><span><i class="icon icon-dashboard"></i>
+                                        Dashboard</span></a>
+                                <a class="dropdown-item" href="#"><span><i class="icon icon-notification"></i>
+                                        Notification <div class="badge badge-pill bg-gold float-right" v-cloak>notif</div></span></a>
+                                <hr>
+                                <a class="dropdown-item" href="http://wangsit.co.id/logout" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();"><span><i
+                                            class="icon icon-logout"></i>
+                                        Logout</span></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+</div>
+    </div>
+    <div>
+        <ul class="pages" style="">
+        <li><a href="http://wangsit.co.id/vendor-directory" style="font-family:Alegreya;" >Vendor</a></li>
+        <li><a href="http://wangsit.co.id/contact" style="font-family:Alegreya;">Wangsit</a></li>
+        <li><a href="http://wangsit.co.id/jadwal-acara"  style="font-family:Alegreya;">Jadwal Acara</a></li>
+        <!-- <li><a href="http://wangsit.co.id/wangsit-info" >Informasi</a></li> -->
+        <li><a href="http://wangsit.co.id/promo"  style="font-family:Alegreya;">Promo</a></li>
+        <li><a href="http://wangsit.co.id/buku-tamu"  style="font-family:Alegreya;">Buku Tamu</a></li>
+        <li><a href="https://ths.li/J68b3t" target="_blank"  style="font-family:Alegreya;">Live Tour</a></li>
+        <!-- <li><a href="http://wangsit.co.id/testimoni" >Testimoni</a></li> -->
+        </ul>
+        </div>
+    <div class="content-wrapper">
+        <div>
+            <div class="row mx-0 mb-3 height-background"
+        id="title" style="background-image: url('http://wangsit.co.id/background/Background_pameran-01.jpg')">
+        <div class="row mx-auto my-auto center">
+            <div id="myCarousel" class="carousel slide w-100 marginbtm" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                
+                    <div class="carousel-item active">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Alethea%20Sposa/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614499037_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/House%20Of%20Pinky/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614500950_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Dini%20Bridal/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614500825_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614500872_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614502916_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="#">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614502928_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Cito%20Laboratorium%20Klinik/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614657900_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Black%20Code%20Tailor/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614658687_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/VENTLEE%20GROOM%20CENTRE/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614664027_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Diamond%20World%20Jewelry/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614757274_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Nadya%20Bridal/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614786650_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Wong%20Hang%20Tailor/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1614839876_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-item ">
+                        <div class="col-lg-4 col-md-6">
+                        <a href="http://wangsit.co.id/vendor-directory/Asean%20Photography/page">
+                            <img class="shadow rounded img-fluid" src="http://wangsit.co.id/public/wangsit/banner/1615129501_banner.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                                    <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="7" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="8" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="9" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="10" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="11" class=""></li>
+                                <li data-target="#myCarousel" data-slide-to="12" class=""></li>
+                                </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container pt-3">
+
+    <div class="row" id="vendors-table">
+        <!-- <div class="col-md-3 mb-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Search" class="search" v-model="filtered.name"
+                    @keyUp="getVendors()">
+            </div> -->
+            <div class="col-md-3 mb-3">
+                <select class="form-control-sm custom-select text-capitalize dropdown-v2 bg-transparent font-category" v-model="filtered.category" @change="">
+                    <option value="" class="font-category">All categories</option>
+                                        <option value="1" class="brown">Bridal &amp; Salon</option>
+                                        <option value="2" class="brown">Catering &amp; Restaurant</option>
+                                        <option value="3" class="brown">Cosmetics &amp; Skin Care</option>
+                                        <option value="4" class="brown">Dancer</option>
+                                        <option value="5" class="brown">Decoration &amp; Florist</option>
+                                        <option value="6" class="brown">Event Organizer</option>
+                                        <option value="7" class="brown">Hotel &amp; Convention Hall</option>
+                                        <option value="8" class="brown">Jewellery</option>
+                                        <option value="9" class="brown">Invitation</option>
+                                        <option value="10" class="brown">Cake</option>
+                                        <option value="11" class="brown">Lighting</option>
+                                        <option value="12" class="brown">Make Up Artist</option>
+                                        <option value="13" class="brown">MC</option>
+                                        <option value="14" class="brown">Music</option>
+                                        <option value="15" class="brown">Pager Ayu/Bagus</option>
+                                        <option value="16" class="brown">Photography</option>
+                                        <option value="17" class="brown">Rumah Mode</option>
+                                        <option value="18" class="brown">Sound System</option>
+                                        <option value="19" class="brown">Souvenir/Accessories</option>
+                                        <option value="20" class="brown">Special Effect</option>
+                                        <option value="21" class="brown">Tailor</option>
+                                        <option value="22" class="brown">Videography</option>
+                                        <option value="23" class="brown">Wedding Accessories</option>
+                                        <option value="24" class="brown">Lain-lain</option>
+                                        <option value="27" class="brown">Lembaga Pengajaran Tata Busana</option>
+                                        <option value="28" class="brown">Panggung &amp; Tenda</option>
+                                    </select>
+                <div class="select-bg rounded"></div>
+            </div>
+            <!-- <div class="col-md-3 mb-3">
+                <select class="form-control-sm custom-select text-capitalize dropdown-v2 bg-transparent font-category" v-model="filtered.city" @change="">
+                    <option value="" class="font-category">All cities</option>
+                    <option v-for="(c, pindex) in filter" :value="c.id" class="brown">
+                        {{c.name}}
+                    </option>
+                </select>
+                <div class="select-bg rounded"></div>
+            </div> -->
+            <div class="col-md-3 mb-3">
+            <input type="submit" id="search" @click="getVendors('1')" value="Find Vendors" class="btn-vendor" />
+            </div>
+            <!-- <div class="col-md-3">
+            <input type="submit" id="allv" value="All Vendors" class="btn-vendor" />
+            </div> -->
+            <div class="col-12">
+                <div class="border-bottom w-12"></div>
+            </div>
+
+        <div class="col-12 mt-3 vendor-list">
+            <div class="row">
+                <div class=" col-md-4 col-xl-3 col-sm-6 " v-for="(vendor, pindex) in vendors">
+                    <a :href="'http://wangsit.co.id/vendor-directory/'+vendor.name+'/page'">
+                        <div class="card mb-4 shadow">
+                            <!-- <div class="card-header"></div> -->
+                            <div class="card-body">
+                                <div class="logo text-center">
+                                    <img class="absolute-center" alt="" :src="'http://wangsit.co.id/public/wangsit/img/vendors/logo/'+vendor.logo"
+                                        v-if="vendor.logo">
+                                    <img class="absolute-center" alt="" :src="'http://wangsit.co.id/wangsit/img/vendors/logo/no_logo.png'"
+                                        v-if="!vendor.logo">
+                                </div>
+                                <h2 class="card-text text-center text-capitalize text-grey mt-3 h5"> {{vendor.name}}</h2>
+                                <div class="row cat text-uppercase text-center brown-bold mb-2">
+                                    <p class="center text-grey" v-if="vendor.category">
+                                        {{vendor.category.name}} - {{vendor.city.name}}</p>
+                                    <p class="center text-grey" v-else>
+                                        Not Set - {{vendor.city.name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <hr>
+                            <div class="text-center" v-if="current_page > 1 &&  current_page != pagi.last_page">
+                            <a href="#" v-bind:class="prev" @click="prev" class="previous btn" >&laquo; Previous</a>
+                            Halaman {{pagi.current_page}} / {{pagi.last_page}}
+                            <a href="#" v-bind:class="test" @click="test" class="next btn">Next &raquo;</a>
+                            <hr>
+                            </div>
+                            <div class="text-center" v-if="current_page == 1 && pagi.last_page != 1">
+                            Halaman {{pagi.current_page}} / {{pagi.last_page}}
+                            <a href="#" v-bind:class="test" @click="test" class="next btn">Next &raquo;</a>
+                                <hr>
+                            </div>
+                            <div class="text-center" v-if="pagi.last_page == 1">
+                            Halaman {{pagi.current_page}} / {{pagi.last_page}}
+                                <hr>
+                            </div>
+                            <div class="text-center" v-if="current_page == pagi.last_page && pagi.last_page !=1">
+                            <a href="#" v-bind:class="prev" @click="prev" class="previous btn" >&laquo; Previous</a>
+                            Halaman {{pagi.current_page}} / {{pagi.last_page}}
+                                <hr>
+                            </div>
+            </div>
+                            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- End container gjhgjh -->
+        </div>
+    </div>
+    <footer class="site-footer" id="main-app">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 style="font-weight: bold;">About</h6>
+            <p class="text-justify">Wangsit The Organizer adalah perusahaan jasa EO atau Event Organizer di industri kreatif bidang wedding selama 25 tahun. Wangsit The Organizer siap membantu menyelesaikan persiapan pesta dan pernikahan dengan  bekerjasama bersama vendor terpecaya.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="font-weight: bold;">Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://wangsit.co.id/vendor-directory">Photography</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Venue</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Music</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Decoration</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Event Organizer</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">etc</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="font-weight: bold;">Quick Links</h6>
+            <ul class="footer-links">
+            <li><a href="http://wangsit.co.id/vendor-directory" >Vendor</a></li>
+            <li><a href="http://wangsit.co.id/contact" >Wangsit</a></li>
+            <li><a href="http://wangsit.co.id/jadwal-acara" >Jadwal Acara</a></li>
+        <!-- <li><a href="http://wangsit.co.id/wangsit-info" >Informasi</a></li> -->
+            <li><a href="http://wangsit.co.id/promo" >Promo</a></li>
+            <li><a href="http://wangsit.co.id/buku-tamu" >Buku Tamu</a></li>
+            <li><a href="https://ths.li/J68b3t" target="_blank">Live Tour</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row border-top border-light">
+          <div class="col-md-8 col-sm-6 col-xs-12 pt-2">
+            <p class="copyright-text">Copyright © 2020 Wangsit. All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 pt-2">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.instagram.com/wangsiteo/" target="_blank"><i class="icon icon-instagram-v2"></i></a></li>
+              <li><a class="twitter" @click  ="sendWA('628881815151&text=hai saya ingin tau tentang Wangsit lebih lengkap')" href="#"><i class="icon icon-whatsapp-v2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+    <div id="loader" v-if="isLoading">
+        <div class="cssload-spin-box"></div>
+    </div>
+
+    <script src="/js/app.js?id=838181b244ca8178d1ec"></script>
+    <script>
+    function ev_track(type, data) {
+        axios.post("http://wangsit.co.id/track/" + type, {
+                data: data,
+                identity: {
+                    user_agent: navigator.userAgent,
+                    referrer: document.referrer,
+                }
+            })
+            .catch(function(error){
+                console.log(error.response);
+            });
+    }
+    ev_track('page_view', {
+        path: window.location.pathname
+    })
+    setInterval(function(){
+        ev_track('idle', {path: window.location.pathname})
+    }, 1800000)
+
+</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="http://wangsit.co.id/js/lightslider.min.js"></script>
+    <script>
+        var loaderApp = new Vue({
+            el: "#loader",
+            data: {
+                isLoading: false,
+            },
+            methods: {
+                loading: function() {
+                    this.isLoading = true;
+                },
+                stopLoading: function() {
+                    this.isLoading = false;
+                }
+            }
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+        var mainApp = new Vue({
+            el: "#main-app",
+            data: {
+                auth:  false ,
+                success: false,
+                errors: {},
+                newmsg: {},
+                old_transaction: null,
+                nextStep: false,
+                subscribe_button: 'register',
+                show_password: false,
+                register_data: {},
+                login_data: {},
+                pop_up_process: 1,
+                pop_up_message: '...'
+            },
+            methods: {
+                // askToSubscribe: function(){
+                //     if(!this.auth){
+                //         var show_alert = false;
+                //         if(!localStorage.getItem('subscription_data')){
+                //             localStorage.setItem('subscription_data', JSON.stringify({
+                //                 status: false,
+                //                 alert: true,
+                //                 alert_time: new Date().getTime()
+                //             }));
+                //             show_alert = true;
+                //         } 
+                //         var subscription = JSON.parse(localStorage.getItem('subscription_data'));
+                //         if(!subscription.status && subscription.alert){
+                //             show_alert = true;
+                //         }
+                        
+                //         if(show_alert){
+                //             var timeout = 3000 //miliseconds;
+                //             var now = new Date().getTime();
+                //             if(subscription.alert_time > now){
+                //                 timeout = subscription.alert_time - now;
+                //             }                            
+                //             setTimeout(function(){
+                //                 $("#subscription-modal").modal({backdrop: 'static', keyboard: false})  ;
+                //             }, timeout);
+                //         }
+                //     }
+                // },
+                // askToSubscribeLater: function(){
+                //     localStorage.setItem('subscription_data', JSON.stringify({
+                //         status: false,
+                //         alert: true,
+                //         alert_time: new Date().getTime()+3*60*1000
+                //     }));
+                //     $("#subscription-modal").modal('hide');
+                //     this.askToSubscribe();
+                // },
+                // askToSubscribeNever: function(){
+                //     localStorage.setItem('subscription_data', JSON.stringify({
+                //         status: false,
+                //         alert: false,
+                //         alert_time: new Date().getTime()
+                //     }));
+                //     $("#subscription-modal").modal('hide');
+                // },
+                confirmPayment: function() {
+                    window.location = "http://wangsit.co.id/transaction/confirm?order_id="+JSON.parse(localStorage.old_transaction).order_id;
+                },
+                copyAmount: function(){
+                    var copyText = document.getElementById("copy_amount");
+                    copyText.select();
+                    document.execCommand("copy");
+                    alert("Copied : " + copyText.value);
+                },
+                doRegister: function(){
+                    var _this = this;
+                    loaderApp.loading();
+                    axios.post("http://wangsit.co.id/popup/register", this.register_data)
+                    .then(function(response){
+                        if(response.data.success == true){
+                            _this.pop_up_message = response.data.message;  
+                            _this.pop_up_process ++;   
+                            _this.errors = {};      
+                            if(_this.register_data.subscribe){
+                                window.localStorage.setItem('subscription_data', JSON.stringify({
+                                    status: true,
+                                    alert: false,
+                                    alert_time: new Date().getTime()
+                                }));
+                            }               
+                        }
+                        loaderApp.stopLoading();
+                    })
+                    .catch(function(error){
+                        console.log(error.response);
+                        _this.errors = error.response.data.errors;
+                        loaderApp.stopLoading();
+                    })
+                },
+                redirect: function (url) {
+                    window.location = url;
+                },
+                newTab: function (url) {
+                    var win = window.open(url, '_blank');
+                    win.focus();
+                },
+                sendWA: function(message) {
+                                        if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        var whatsapp_url =
+                            "https://api.whatsapp.com/send?phone=" + message;
+                        window.open(whatsapp_url, '_blank');
+                    } else {
+                        // alert('you are not using mobile device.');
+                        var whatsapp_url =
+                            "https://web.whatsapp.com/send?phone=" + message;
+                        window.open(whatsapp_url, '_blank');
+                    }
+                    ev_track('LEAD', {
+                        event: 'send wa',
+                        data: {
+                            message: message
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                sharePostWA: function() {
+                                        if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        var whatsapp_url =
+                        "https://api.whatsapp.com/send?text=" + window.location.href;
+                        window.open(whatsapp_url, '_blank');
+                    } else {
+                        // alert('you are not using mobile device.');
+                        var whatsapp_url =
+                            "https://web.whatsapp.com/send?text=" + window.location.href;
+                            window.open(whatsapp_url, '_blank');
+                        }
+                        ev_track('SHARE', {
+                        event: 'share link',
+                        data: {
+                            message: 'Share Link '+ window.location.href + ' menggunakan Whatsapp'
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                sharePostLine: function() {
+                                            var line_url = "https://lineit.line.me/share/ui?url="+ window.location.href;
+                        window.open(line_url, '_blank');
+                        ev_track('SHARE', {
+                        event: 'share link Line',
+                        data: {
+                            message: 'Share Link '+ window.location.href +' menggunakan Line'
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                sharePostFB: function() {
+                                            var fb_url = "https://www.facebook.com/sharer/sharer.php?u="+ window.location.href +"&display=popup";
+                        window.open(fb_url, '_blank');
+                        ev_track('SHARE', {
+                        event: 'share link Facebook',
+                        data: {
+                            message: 'Share Link'+ window.location.href +' menggunakan Facebook'
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                cancelOrder: function(){
+                    var c = confirm('Are you sure to cancel the order?');
+                    if (c) {
+                        axios.get("http://wangsit.co.id/order/cancel/?oi=" + JSON.parse(localStorage.old_transaction).order_id)
+                            .then(function(response){
+                                if (response.data.status == 'order canceled') {
+                                    localStorage.removeItem('old_transaction');
+                                    $('#oldTransactionModal').modal('hide');
+                                } else {
+                                    console.log(response.data.status);
+
+                                }
+                            })
+                            .catch(function(error){
+                                console.log(error.response);
+                            })
+                    }
+                },
+                createMsg: function () {
+                    var _this = this;
+                    axios.post("http://wangsit.co.id/add_message", this.newmsg).then(function(response){
+                            _this.newmsg.name = null;
+                            _this.newmsg.email = null;
+                            _this.newmsg.message = null;
+                            _this.errors = null;
+                            _this.success = true;
+                            setTimeout(function(){
+                                _this.success = false;
+                            }, 3000);
+                        })
+                        .catch(function(error){
+                            _this.errors = error.response.data.errors;
+                            console.log(error.response.data);
+                        });
+                },
+                getError: function(label) {
+                    if (this.errors) {
+                        if (label in this.errors) {
+                            return this.errors[label][0];
+                        } else {
+                            return null;
+                        }
+                    } else {
+                        return null;
+                    }
+                },
+                checkOldTransaction: function(orderId) {
+                    var _this = this;
+                    axios.get("http://wangsit.co.id/order/status/?oi=" + orderId)
+                        .then(function(response){
+                            console.log(response.data);
+
+                            if (response.data.status == 'paid') {
+                                localStorage.removeItem('old_transaction');
+                            } else if (response.data.status == 'order') {
+                                _this.old_transaction = JSON.parse(localStorage.old_transaction).newtransaction;
+                                $('#oldTransactionModal').modal('show');
+                            } else {
+                                console.log(response.data.status);
+                            }
+                        })
+                        .catch(function(error) {
+                            console.log(error.response.data);
+                        })
+                },
+                finishPayment: function() {
+                    var old = JSON.parse(localStorage.old_transaction);
+                    if (old.newtransaction.payment == 'BCA') {
+                        this.nextStep = true;
+
+                    } else {
+                        this.nextStep = false;
+                        window.location = old.confirm_url;
+                    }
+                }
+            },
+            mounted: function() {
+                if(window.location.pathname != '/transaction/confirm'){
+                    if (localStorage.getItem('old_transaction')) {
+                        var old = JSON.parse(localStorage.old_transaction);
+                        if (new Date(old.exp) <= new Date()) {
+                            localStorage.removeItem('old_transaction');
+                        } else {
+                            this.checkOldTransaction(old.order_id)
+                        }
+                    }
+                }
+                // this.askToSubscribe();
+
+                // this.autoCompletePhone("#register_phone");
+                // this.autoCompletePhone("#login_phone");
+            }
+        });
+
+    </script>
+    <script src="http://wangsit.co.id/css/carousel.js"></script>
+<script src="http://wangsit.co.id/js/apps.js"></script>
+<script>
+    var vendorApp = new Vue({
+        el: '#vendors-table',
+        data: {
+            vendors: [],
+            filter: [],
+            pagi : {},
+            filtered: {
+                category: '',
+                city: '',
+            },
+            current_page: 1,
+        },
+
+        methods: {
+            cate: function (page){
+                console.log(page);
+                console.log(this.filtered.city);
+            },
+            prev:function (){
+                $halaman = this.current_page-1;
+                this.getVendors($halaman);
+            },
+            test:function (){
+               // alert(message);
+               $halaman = this.current_page+1;
+               this.getVendors($halaman);
+            },
+            getVendors: function (page) {
+                if (!page) {
+                    page = this.current_page;
+                }
+                let f = this.filtered;
+                loaderApp.loading();
+                this.current_page = page;
+                axios.get('list/vendor/page?page='+page+'&category='+f.category+'&city='+f.city)
+                    .then(response => {
+                        this.vendors = response.data.data;
+                        this.pagi = response.data;
+                        console.log(this.vendors);
+                        loaderApp.stopLoading();
+                    })
+                    .catch(errors => {
+                        console.log(errors.response);
+                        loaderApp.stopLoading();
+                    });
+            },
+            getFilter: function () {
+                axios.get("city")
+                    .then(response => {
+                        this.filter = response.data;
+                       // console.log(response);
+                    })
+                    .catch(errors => {
+                        console.log(errors.response);
+                    });
+            },
+        },
+
+        mounted() {
+            this.getVendors(this.current_page);
+            this.getFilter();
+        }
+    });
+
+</script>
+    <script>
+        var navApp = new Vue({
+            el: "#navApp",
+            data: {
+                notifications: [],
+                query: '',
+                results: []
+            },
+            methods: {
+                                // autoComplete: function() {
+                //     if(this.query.length > 2){
+                //     axios.get('search',{params: {query: this.query}}).then(response => {
+                //     this.results = response.data;
+                //     });
+                // }
+            },
+            computed: {
+                notif_count: function() {
+                    return this.notifications.length;
+                }
+            },
+            mounted: function() {
+                if(!localStorage.getItem('deviceId')){
+                    localStorage.setItem('deviceId', generateRandomString(10));
+                }
+                if(!sessionStorage.getItem('sessionId')){
+                    sessionStorage.setItem('sessionId', generateRandomString(10));
+                }
+                axios.post(window.location.origin+'/api/v1/guest/analytic.track-user-active', {
+                    device_id: localStorage.getItem('deviceId'),
+                    type: 'web'
+                })
+                                
+            },
+
+        });
+
+        
+
+        $(function () {
+            $('#modalNotif').on('shown.bs.modal', function () {
+                $('.collapse').collapse('hide');
+            })
+            var current_url = "http://wangsit.co.id";
+            var x = $(".dropdown-menu > [href='" + current_url + "']").parent().parent().find(
+                "a.dropdown-toggle").addClass('active');
+            // console.log(x);
+            $("[href='" + current_url + "']").addClass('active');
+            $('.navbar-toggler').click(function (e) {
+                $('.collapse').collapse('hide');
+            });
+        });
+
+        $(function () {
+            $(".fab,.backdrop").click(function () {
+                if ($(".backdrop").is(":visible")) {
+                    $(".backdrop").fadeOut(125);
+                    $(".fab.child")
+                        .stop()
+                        .animate({
+                            bottom: $("#masterfab").css("bottom"),
+                            opacity: 0
+                        }, 125, function () {
+                            $(this).hide();
+                        });
+                } else {
+                    $(".backdrop").fadeIn(125);
+                    $(".fab.child").each(function () {
+                        $(this)
+                            .stop()
+                            .show()
+                            .animate({
+                                bottom: (parseInt($("#masterfab").css("bottom")) +
+                                    parseInt(
+                                        $("#masterfab").outerHeight()) + 70 * $(
+                                        this).data(
+                                        "subitem") - $(".fab.child").outerHeight()
+                                ) + "px",
+                                opacity: 1
+                            }, 125);
+                    });
+                }
+            });
+        });
+        function generateRandomString(length) {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            
+            for (var i = 0; i < length; i++)
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            
+            return text;
+        }
+    </script>
+
+    <script>
+
+  Vue.component('auto-complete', {
+    template:`
+    <div>
+   
+      <input type="text" placeholder="Search" v-model="query" @keyup="getData()" autocomplete="off" class="form-control form-control-sm" />
+      <div v-if="query.length > 1">
+      <div class="panel-footer" v-if="search_data.length">
+        <ul class="list-group" >
+          <a :href="'http://wangsit.co.id/vendor-directory/'+data1.name+'/page'" v-for="data1 in search_data" class="list-group-item" @click="getName(data1.name)">{{ data1.name }}</a>
+        </ul>
+      </div>
+    </div>
+    `,
+    data:function(){
+      return{
+        query:"",
+        search_data:[]
+      }
+    },
+    methods:{
+      getData:function(){
+        if(this.query.length > 2){
+        this.search_data = [];
+        axios.get("search?query="+this.query).then(response => {
+          this.search_data = response.data;
+        });
+    }
+      },
+      getName:function(name){
+        this.query = name;
+        this.search_data = [];
+      }
+    }
+  });
+
+  var application = new Vue({
+    el:"#autocomplete_app"
+  });
+
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVNC4HYHXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVNC4HYHXW');
+</script>
+<style type="text/css">
+@font-face {
+    font-family: Alegreya;
+    src: url('/var/www/wangsit-eo/public/fonts/v2/static/Alegreya-MediumItalic.tff');
+}
+</style>
+   <!-- <script src="https://demo.portofolio.web.id/wangsit/wangsit.js"></script> -->
+    </body>
+    </html>

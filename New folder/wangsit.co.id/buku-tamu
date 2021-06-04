@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="xFPZWELyfhDyEFfGUXSuggm8hmEUfQWJbeHVvjRH">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo_wangsit.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://wangsit.co.id/css/apps.css">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/v2/template.css?version=3.4.2">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/v2/icons.css?version=2.0.1">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/plugin/loader.css?version=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://demo.portofolio.web.id/wangsit/wangsit.css">
+    <link rel="stylesheet" href="http://wangsit.co.id/css/lightslider.min.css?version=1.3">
+    <style>
+        .center { margin: 0 auto;
+            text-align:center;
+            font-size: 12px;
+        }
+        .font-category{
+            font-size: 0.1rem;
+		}
+		.tinggi{
+            height: 600px;
+            background-size: 100%;
+		}
+        .checked {
+        color: orange;
+        }
+        .unchecked{
+        color: #6c6c6c;
+        }
+        .backgrounds{
+            background-size: contain;
+        }
+    </style>
+
+<title>Wangsit | Buku Tamu</title>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googvaragmanager.com/ns.html?id=GTM-TD8LLWQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="fixed-top" id="autocomplete_app">
+        <div class="bg-pink">
+        <div>
+            <div class="navbar navbar-expand-md navbar-light py-2 p-0 bg-pink top-menu champagne-bold">
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target=".multicollapse"
+                    aria-controls="collapse1 collapse2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="http://wangsit.co.id" class="navbar-brand">
+                    <img src="http://wangsit.co.id/logo_wangsit.png" alt="" height="40">
+                </a>
+
+                <div class="col-md-7">
+                <auto-complete></auto-complete>
+               <!-- <input type="text" class="form-control form-control-sm" v-model="query" onchange="autoComplete" placeholder="Search" class="search" >
+                 <div class="panel-footer" v-if="results.length != 0">
+                <ul class="list-group">
+                <li class="list-group-item" v-for="result in results">
+                   {{result.name}}
+                </li>
+                </ul>
+                </div> -->
+                </div>
+                <!-- pembatas -->
+                <!-- <div class="navbar-collapse justify-content-end">
+                    <div class="navbar-nav">
+                    <div class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="profile-dropdown">
+                                    <img src="http://wangsit.co.id/icon/ic_account.png" alt="avatar" class="absolute-center h-100">
+                                </div>
+                                <i class="icon icon-carret-down"></i>
+                            </a>
+                             <div class="collapse dropdown-menu dropdown-menu-right profile-menu helvetica"
+                                aria-labelledby="profileDropdown" id="profile-collapse">
+                                <span class="dropdown-item text-uppercase text-center"> test1</span>
+                                <span class="dropdown-item text-center"><small class="text-muted">test2</small></span>
+                                <hr>
+                                <a class="dropdown-item" href="http://wangsit.co.id/user/dashboard"><span><i class="icon icon-dashboard"></i>
+                                        Dashboard</span></a>
+                                <a class="dropdown-item" href="#"><span><i class="icon icon-notification"></i>
+                                        Notification <div class="badge badge-pill bg-gold float-right" v-cloak>notif</div></span></a>
+                                <hr>
+                                <a class="dropdown-item" href="http://wangsit.co.id/logout" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();"><span><i
+                                            class="icon icon-logout"></i>
+                                        Logout</span></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+</div>
+    </div>
+    <div>
+        <ul class="pages" style="">
+        <li><a href="http://wangsit.co.id/vendor-directory" style="font-family:Alegreya;" >Vendor</a></li>
+        <li><a href="http://wangsit.co.id/contact" style="font-family:Alegreya;">Wangsit</a></li>
+        <li><a href="http://wangsit.co.id/jadwal-acara"  style="font-family:Alegreya;">Jadwal Acara</a></li>
+        <!-- <li><a href="http://wangsit.co.id/wangsit-info" >Informasi</a></li> -->
+        <li><a href="http://wangsit.co.id/promo"  style="font-family:Alegreya;">Promo</a></li>
+        <li><a href="http://wangsit.co.id/buku-tamu"  style="font-family:Alegreya;">Buku Tamu</a></li>
+        <li><a href="https://ths.li/J68b3t" target="_blank"  style="font-family:Alegreya;">Live Tour</a></li>
+        <!-- <li><a href="http://wangsit.co.id/testimoni" >Testimoni</a></li> -->
+        </ul>
+        </div>
+    <div class="content-wrapper">
+        <div>
+            <div class="row mx-0 tinggi backgrounds"
+        id="title" style="background-image: url('http://wangsit.co.id/background/Background_pameran-01.jpg')">
+        <div class="row mx-auto my-auto center">
+    <div class="row justify-content-center mx-0">
+    <div class="col-12">
+    <div class="row">
+    <div class="col-md-8 py-1">
+            <div class="card">
+                <div class="card-header" style="font-weight: bold; font-size: large;">Buku Tamu</div>
+
+                <div class="card-body">
+                    <form method="POST" action="/simpan_tamu" aria-label="Buku Tamu">
+                        <input type="hidden" name="_token" value="xFPZWELyfhDyEFfGUXSuggm8hmEUfQWJbeHVvjRH">
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right" style="font-weight: bold; font-size: 16px;">Nama</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+
+                                                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="alamat" class="col-md-4 col-form-label text-md-right" style="font-weight: bold; font-size: 16px;">Alamat</label>
+
+                            <div class="col-md-6">
+                                <input id="alamat" type="text" class="form-control" name="alamat" value="" required autofocus>
+
+                                                            </div>
+                        </div>
+
+                        <!-- <div class="form-group row">
+                            <label for="ttl" class="col-md-4 col-form-label text-md-right" style="font-weight: bold; font-size: 16px;">Tempat Tanggal Lahir</label>
+
+                            <div class="col-md-6">
+                                <input id="ttl" type="text" class="form-control" name="ttl" value="" required autofocus>
+
+                                                            </div>
+                        </div> -->
+                        <div class="form-group row">
+                            <label for="telp" class="col-md-4 col-form-label text-md-right" style="font-weight: bold; font-size: 16px;">No Telp</label>
+
+                            <div class="col-md-6">
+                                <input id="telp" type="text" class="form-control" name="telp" value="" required autofocus>
+
+                                                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right" style="font-weight: bold; font-size: 16px;">E-Mail</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="" required>
+
+                                                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-dark">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="inspiration-label d-flex align-items-center flex-column py-5">
+                                <span class="mt-5 helvetica h5 px-5 text-center">
+                                Kirim data diri anda, untuk mendapatkan update dari web ini serta penawaran special dari vendor kami.
+                                </span>
+                            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+    </div>
+    <footer class="site-footer" id="main-app">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6 style="font-weight: bold;">About</h6>
+            <p class="text-justify">Wangsit The Organizer adalah perusahaan jasa EO atau Event Organizer di industri kreatif bidang wedding selama 25 tahun. Wangsit The Organizer siap membantu menyelesaikan persiapan pesta dan pernikahan dengan  bekerjasama bersama vendor terpecaya.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="font-weight: bold;">Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://wangsit.co.id/vendor-directory">Photography</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Venue</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Music</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Decoration</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">Event Organizer</a></li>
+              <li><a href="http://wangsit.co.id/vendor-directory">etc</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6 style="font-weight: bold;">Quick Links</h6>
+            <ul class="footer-links">
+            <li><a href="http://wangsit.co.id/vendor-directory" >Vendor</a></li>
+            <li><a href="http://wangsit.co.id/contact" >Wangsit</a></li>
+            <li><a href="http://wangsit.co.id/jadwal-acara" >Jadwal Acara</a></li>
+        <!-- <li><a href="http://wangsit.co.id/wangsit-info" >Informasi</a></li> -->
+            <li><a href="http://wangsit.co.id/promo" >Promo</a></li>
+            <li><a href="http://wangsit.co.id/buku-tamu" >Buku Tamu</a></li>
+            <li><a href="https://ths.li/J68b3t" target="_blank">Live Tour</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row border-top border-light">
+          <div class="col-md-8 col-sm-6 col-xs-12 pt-2">
+            <p class="copyright-text">Copyright © 2020 Wangsit. All Rights Reserved
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12 pt-2">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.instagram.com/wangsiteo/" target="_blank"><i class="icon icon-instagram-v2"></i></a></li>
+              <li><a class="twitter" @click  ="sendWA('628881815151&text=hai saya ingin tau tentang Wangsit lebih lengkap')" href="#"><i class="icon icon-whatsapp-v2"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+    <div id="loader" v-if="isLoading">
+        <div class="cssload-spin-box"></div>
+    </div>
+
+    <script src="/js/app.js?id=838181b244ca8178d1ec"></script>
+    <script>
+    function ev_track(type, data) {
+        axios.post("http://wangsit.co.id/track/" + type, {
+                data: data,
+                identity: {
+                    user_agent: navigator.userAgent,
+                    referrer: document.referrer,
+                }
+            })
+            .catch(function(error){
+                console.log(error.response);
+            });
+    }
+    ev_track('page_view', {
+        path: window.location.pathname
+    })
+    setInterval(function(){
+        ev_track('idle', {path: window.location.pathname})
+    }, 1800000)
+
+</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="http://wangsit.co.id/js/lightslider.min.js"></script>
+    <script>
+        var loaderApp = new Vue({
+            el: "#loader",
+            data: {
+                isLoading: false,
+            },
+            methods: {
+                loading: function() {
+                    this.isLoading = true;
+                },
+                stopLoading: function() {
+                    this.isLoading = false;
+                }
+            }
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+        var mainApp = new Vue({
+            el: "#main-app",
+            data: {
+                auth:  false ,
+                success: false,
+                errors: {},
+                newmsg: {},
+                old_transaction: null,
+                nextStep: false,
+                subscribe_button: 'register',
+                show_password: false,
+                register_data: {},
+                login_data: {},
+                pop_up_process: 1,
+                pop_up_message: '...'
+            },
+            methods: {
+                // askToSubscribe: function(){
+                //     if(!this.auth){
+                //         var show_alert = false;
+                //         if(!localStorage.getItem('subscription_data')){
+                //             localStorage.setItem('subscription_data', JSON.stringify({
+                //                 status: false,
+                //                 alert: true,
+                //                 alert_time: new Date().getTime()
+                //             }));
+                //             show_alert = true;
+                //         } 
+                //         var subscription = JSON.parse(localStorage.getItem('subscription_data'));
+                //         if(!subscription.status && subscription.alert){
+                //             show_alert = true;
+                //         }
+                        
+                //         if(show_alert){
+                //             var timeout = 3000 //miliseconds;
+                //             var now = new Date().getTime();
+                //             if(subscription.alert_time > now){
+                //                 timeout = subscription.alert_time - now;
+                //             }                            
+                //             setTimeout(function(){
+                //                 $("#subscription-modal").modal({backdrop: 'static', keyboard: false})  ;
+                //             }, timeout);
+                //         }
+                //     }
+                // },
+                // askToSubscribeLater: function(){
+                //     localStorage.setItem('subscription_data', JSON.stringify({
+                //         status: false,
+                //         alert: true,
+                //         alert_time: new Date().getTime()+3*60*1000
+                //     }));
+                //     $("#subscription-modal").modal('hide');
+                //     this.askToSubscribe();
+                // },
+                // askToSubscribeNever: function(){
+                //     localStorage.setItem('subscription_data', JSON.stringify({
+                //         status: false,
+                //         alert: false,
+                //         alert_time: new Date().getTime()
+                //     }));
+                //     $("#subscription-modal").modal('hide');
+                // },
+                confirmPayment: function() {
+                    window.location = "http://wangsit.co.id/transaction/confirm?order_id="+JSON.parse(localStorage.old_transaction).order_id;
+                },
+                copyAmount: function(){
+                    var copyText = document.getElementById("copy_amount");
+                    copyText.select();
+                    document.execCommand("copy");
+                    alert("Copied : " + copyText.value);
+                },
+                doRegister: function(){
+                    var _this = this;
+                    loaderApp.loading();
+                    axios.post("http://wangsit.co.id/popup/register", this.register_data)
+                    .then(function(response){
+                        if(response.data.success == true){
+                            _this.pop_up_message = response.data.message;  
+                            _this.pop_up_process ++;   
+                            _this.errors = {};      
+                            if(_this.register_data.subscribe){
+                                window.localStorage.setItem('subscription_data', JSON.stringify({
+                                    status: true,
+                                    alert: false,
+                                    alert_time: new Date().getTime()
+                                }));
+                            }               
+                        }
+                        loaderApp.stopLoading();
+                    })
+                    .catch(function(error){
+                        console.log(error.response);
+                        _this.errors = error.response.data.errors;
+                        loaderApp.stopLoading();
+                    })
+                },
+                redirect: function (url) {
+                    window.location = url;
+                },
+                newTab: function (url) {
+                    var win = window.open(url, '_blank');
+                    win.focus();
+                },
+                sendWA: function(message) {
+                                        if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        var whatsapp_url =
+                            "https://api.whatsapp.com/send?phone=" + message;
+                        window.open(whatsapp_url, '_blank');
+                    } else {
+                        // alert('you are not using mobile device.');
+                        var whatsapp_url =
+                            "https://web.whatsapp.com/send?phone=" + message;
+                        window.open(whatsapp_url, '_blank');
+                    }
+                    ev_track('LEAD', {
+                        event: 'send wa',
+                        data: {
+                            message: message
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                sharePostWA: function() {
+                                        if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        var whatsapp_url =
+                        "https://api.whatsapp.com/send?text=" + window.location.href;
+                        window.open(whatsapp_url, '_blank');
+                    } else {
+                        // alert('you are not using mobile device.');
+                        var whatsapp_url =
+                            "https://web.whatsapp.com/send?text=" + window.location.href;
+                            window.open(whatsapp_url, '_blank');
+                        }
+                        ev_track('SHARE', {
+                        event: 'share link',
+                        data: {
+                            message: 'Share Link '+ window.location.href + ' menggunakan Whatsapp'
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                sharePostLine: function() {
+                                            var line_url = "https://lineit.line.me/share/ui?url="+ window.location.href;
+                        window.open(line_url, '_blank');
+                        ev_track('SHARE', {
+                        event: 'share link Line',
+                        data: {
+                            message: 'Share Link '+ window.location.href +' menggunakan Line'
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                sharePostFB: function() {
+                                            var fb_url = "https://www.facebook.com/sharer/sharer.php?u="+ window.location.href +"&display=popup";
+                        window.open(fb_url, '_blank');
+                        ev_track('SHARE', {
+                        event: 'share link Facebook',
+                        data: {
+                            message: 'Share Link'+ window.location.href +' menggunakan Facebook'
+                        },
+                        source: window.location.pathname
+                    })
+                },
+                cancelOrder: function(){
+                    var c = confirm('Are you sure to cancel the order?');
+                    if (c) {
+                        axios.get("http://wangsit.co.id/order/cancel/?oi=" + JSON.parse(localStorage.old_transaction).order_id)
+                            .then(function(response){
+                                if (response.data.status == 'order canceled') {
+                                    localStorage.removeItem('old_transaction');
+                                    $('#oldTransactionModal').modal('hide');
+                                } else {
+                                    console.log(response.data.status);
+
+                                }
+                            })
+                            .catch(function(error){
+                                console.log(error.response);
+                            })
+                    }
+                },
+                createMsg: function () {
+                    var _this = this;
+                    axios.post("http://wangsit.co.id/add_message", this.newmsg).then(function(response){
+                            _this.newmsg.name = null;
+                            _this.newmsg.email = null;
+                            _this.newmsg.message = null;
+                            _this.errors = null;
+                            _this.success = true;
+                            setTimeout(function(){
+                                _this.success = false;
+                            }, 3000);
+                        })
+                        .catch(function(error){
+                            _this.errors = error.response.data.errors;
+                            console.log(error.response.data);
+                        });
+                },
+                getError: function(label) {
+                    if (this.errors) {
+                        if (label in this.errors) {
+                            return this.errors[label][0];
+                        } else {
+                            return null;
+                        }
+                    } else {
+                        return null;
+                    }
+                },
+                checkOldTransaction: function(orderId) {
+                    var _this = this;
+                    axios.get("http://wangsit.co.id/order/status/?oi=" + orderId)
+                        .then(function(response){
+                            console.log(response.data);
+
+                            if (response.data.status == 'paid') {
+                                localStorage.removeItem('old_transaction');
+                            } else if (response.data.status == 'order') {
+                                _this.old_transaction = JSON.parse(localStorage.old_transaction).newtransaction;
+                                $('#oldTransactionModal').modal('show');
+                            } else {
+                                console.log(response.data.status);
+                            }
+                        })
+                        .catch(function(error) {
+                            console.log(error.response.data);
+                        })
+                },
+                finishPayment: function() {
+                    var old = JSON.parse(localStorage.old_transaction);
+                    if (old.newtransaction.payment == 'BCA') {
+                        this.nextStep = true;
+
+                    } else {
+                        this.nextStep = false;
+                        window.location = old.confirm_url;
+                    }
+                }
+            },
+            mounted: function() {
+                if(window.location.pathname != '/transaction/confirm'){
+                    if (localStorage.getItem('old_transaction')) {
+                        var old = JSON.parse(localStorage.old_transaction);
+                        if (new Date(old.exp) <= new Date()) {
+                            localStorage.removeItem('old_transaction');
+                        } else {
+                            this.checkOldTransaction(old.order_id)
+                        }
+                    }
+                }
+                // this.askToSubscribe();
+
+                // this.autoCompletePhone("#register_phone");
+                // this.autoCompletePhone("#login_phone");
+            }
+        });
+
+    </script>
+    <script>
+    var msg = '';
+    var exist = '';
+    if(exist){
+      alert(msg);
+    }
+  </script>
+    <script>
+        var navApp = new Vue({
+            el: "#navApp",
+            data: {
+                notifications: [],
+                query: '',
+                results: []
+            },
+            methods: {
+                                // autoComplete: function() {
+                //     if(this.query.length > 2){
+                //     axios.get('search',{params: {query: this.query}}).then(response => {
+                //     this.results = response.data;
+                //     });
+                // }
+            },
+            computed: {
+                notif_count: function() {
+                    return this.notifications.length;
+                }
+            },
+            mounted: function() {
+                if(!localStorage.getItem('deviceId')){
+                    localStorage.setItem('deviceId', generateRandomString(10));
+                }
+                if(!sessionStorage.getItem('sessionId')){
+                    sessionStorage.setItem('sessionId', generateRandomString(10));
+                }
+                axios.post(window.location.origin+'/api/v1/guest/analytic.track-user-active', {
+                    device_id: localStorage.getItem('deviceId'),
+                    type: 'web'
+                })
+                                
+            },
+
+        });
+
+        
+
+        $(function () {
+            $('#modalNotif').on('shown.bs.modal', function () {
+                $('.collapse').collapse('hide');
+            })
+            var current_url = "http://wangsit.co.id/buku-tamu";
+            var x = $(".dropdown-menu > [href='" + current_url + "']").parent().parent().find(
+                "a.dropdown-toggle").addClass('active');
+            // console.log(x);
+            $("[href='" + current_url + "']").addClass('active');
+            $('.navbar-toggler').click(function (e) {
+                $('.collapse').collapse('hide');
+            });
+        });
+
+        $(function () {
+            $(".fab,.backdrop").click(function () {
+                if ($(".backdrop").is(":visible")) {
+                    $(".backdrop").fadeOut(125);
+                    $(".fab.child")
+                        .stop()
+                        .animate({
+                            bottom: $("#masterfab").css("bottom"),
+                            opacity: 0
+                        }, 125, function () {
+                            $(this).hide();
+                        });
+                } else {
+                    $(".backdrop").fadeIn(125);
+                    $(".fab.child").each(function () {
+                        $(this)
+                            .stop()
+                            .show()
+                            .animate({
+                                bottom: (parseInt($("#masterfab").css("bottom")) +
+                                    parseInt(
+                                        $("#masterfab").outerHeight()) + 70 * $(
+                                        this).data(
+                                        "subitem") - $(".fab.child").outerHeight()
+                                ) + "px",
+                                opacity: 1
+                            }, 125);
+                    });
+                }
+            });
+        });
+        function generateRandomString(length) {
+            var text = "";
+            var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            
+            for (var i = 0; i < length; i++)
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            
+            return text;
+        }
+    </script>
+
+    <script>
+
+  Vue.component('auto-complete', {
+    template:`
+    <div>
+   
+      <input type="text" placeholder="Search" v-model="query" @keyup="getData()" autocomplete="off" class="form-control form-control-sm" />
+      <div v-if="query.length > 1">
+      <div class="panel-footer" v-if="search_data.length">
+        <ul class="list-group" >
+          <a :href="'http://wangsit.co.id/vendor-directory/'+data1.name+'/page'" v-for="data1 in search_data" class="list-group-item" @click="getName(data1.name)">{{ data1.name }}</a>
+        </ul>
+      </div>
+    </div>
+    `,
+    data:function(){
+      return{
+        query:"",
+        search_data:[]
+      }
+    },
+    methods:{
+      getData:function(){
+        if(this.query.length > 2){
+        this.search_data = [];
+        axios.get("search?query="+this.query).then(response => {
+          this.search_data = response.data;
+        });
+    }
+      },
+      getName:function(name){
+        this.query = name;
+        this.search_data = [];
+      }
+    }
+  });
+
+  var application = new Vue({
+    el:"#autocomplete_app"
+  });
+
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KVNC4HYHXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KVNC4HYHXW');
+</script>
+<style type="text/css">
+@font-face {
+    font-family: Alegreya;
+    src: url('/var/www/wangsit-eo/public/fonts/v2/static/Alegreya-MediumItalic.tff');
+}
+</style>
+   <!-- <script src="https://demo.portofolio.web.id/wangsit/wangsit.js"></script> -->
+    </body>
+    </html>
